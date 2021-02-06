@@ -23,7 +23,7 @@ Run docker container:
 
     ./bin/run
 
-API endpoints: 
+## API endpoints: 
 
 | Endpoint | Description |
  :---|:---
