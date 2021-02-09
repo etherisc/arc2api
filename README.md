@@ -28,6 +28,6 @@ Or directly via docker:
 
 | Endpoint | Description |
  :---|:---
-`curl -X GET "localhost:8000/arc2?date={date}&lat={lat}&lng={lng}" -H "accept: */*"` | Request precipitation for date, latitude = lat and longitude = lng
+`curl -X GET "http://localhost:8000/arc2?date=2020-04-18&latMin=36.6&lngMin=-1.5&latMax=37.1&lngMax=-1.1" -H  "accept: */*"` | Example curl request for Nairobi region on April 1818 2020
 `localhost:8000/__docs__/` | Interactive Swagger Docs
 
