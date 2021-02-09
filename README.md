@@ -10,19 +10,20 @@ For information on ARC2 data, see ftp://ftp.cpc.ncep.noaa.gov/fews/fewsdata/afri
 
 Clone the repo:  
 
-
     git clone git@github.com:etherisc/arc2api.git
 
 Build docker image: 
 
-
-    docker build -t arc2api
+    docker build -t arc2api .
 
 Run docker container: 
 
-
     ./bin/run
 
+Or directly via docker:
+
+    docker run --rm -p 8000:8000 -v `pwd`/app:/app arc2api /app/arc2api.R > log.out
+    
 ## API endpoints: 
 
 | Endpoint | Description |
