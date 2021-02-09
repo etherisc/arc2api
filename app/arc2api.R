@@ -5,17 +5,12 @@
 
 library(rnoaa)
 
-#* Return the precipitation at a date for lat, lng bounding box location. 
-#* When maximum parameters are skipped only the value for the mininum latitude/longitude is returned.
-#* Example data for some precipitation in Nairobi in April 2020
-#* - date: 2020-04-18
-#* - lat/long bounding box min values: 36.6, -1.5
-#* - lat/long bounding box max values: 37.1, -1.1 
-#* @param date date
-#* @param latMin minimum latitude of bounding box
-#* @param lngMin minimum longitude of bounding box
-#* @param latMax maximum latitude of bounding box (optional parameter)
-#* @param lngMax maximum longitude of bounding box (optional parameter)
+#* Return the precipitation at a date for lat, lng bounding box location. When maximum parameters are skipped only the value for the mininum latitude/longitude is returned.
+#* @param date date, example value: 2020-04-18
+#* @param latMin minimum latitude of bounding box, example value: 36.6
+#* @param lngMin minimum longitude of bounding box, example value: -1.5
+#* @param latMax maximum latitude of bounding box (optional parameter, example value: 37.1)
+#* @param lngMax maximum longitude of bounding box (optional parameter, example value: -1.1)
 #* @get /arc2
 function(date="", latMin="", lngMin="", latMax="", lngMax="") {
    latMinFloat <- round(as.numeric(latMin), digits = 1)
