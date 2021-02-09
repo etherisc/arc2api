@@ -1,6 +1,6 @@
-# @apiTitle       Arc2 REST API
-# @apiDescription Return precipitation for Africa for given date, latitude and longitude
-# @apiContact     list(name = "Contact", url = "https://github.com/etherisc/arc2api", email = "christoph.mussenbrock@etherisc")
+#* @apiTitle       Arc2 REST API
+#* @apiDescription Return precipitation for Africa for given date, latitude and longitude
+#* @apiContact     list(name = "Contact", url = "https://github.com/etherisc/arc2api", email = "christoph.mussenbrock@etherisc")
 # Created on: 06/02/2021
 
 library(rnoaa)
