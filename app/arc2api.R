@@ -13,7 +13,7 @@ library(rnoaa)
 #* @param date start date (example: 2020-04-16)
 #* @param days optional number of days starting with start date (example: 7, default: 1)
 #* @get /arc2pixel
-function(pixel="Pixel390562", date="1986-01-10", days="5") {
+function(pixel="Pixel392578", date="2020-02-20", days="1") {
 
    latPix <- as.numeric(substring(pixel, 6, 8))
    lngPix <- as.numeric(substring(pixel, 9, 11))
